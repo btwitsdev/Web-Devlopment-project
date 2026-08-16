@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dff3ff, #f5fbff);
+    min-height: 100vh;
+    color: #222;
+}
+
+header {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    font-size: 17px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #1565c0;
+}
+
+.search-box button {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #1565c0;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #0d47a1;
+}
+
+#message {
+    text-align: center;
+    min-height: 22px;
+    color: #c62828;
+    margin-bottom: 8px;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.weather-card h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.weather-icon {
+    font-size: 75px;
+    margin: 8px 0;
+}
+
+.temperature {
+    font-size: 58px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#condition {
+    font-size: 20px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin: 30px 0;
+}
+
+.detail span {
+    font-size: 25px;
+}
+
+.detail h3 {
+    margin: 5px 0;
+}
+
+.detail p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time-box {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.time-box h3 {
+    font-size: 20px;
+}
+
+#currentTime {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 8px 0 3px;
+}
+
+#date {
+    color: #666;
+}
+
+.updated {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+@media (max-width: 550px) {
+    .search-box {
+        flex-direction: column;
+    }
+
+    .details {
+        gap: 40px;
+    }
+
+    .weather-card {
+        padding: 22px;
+    }
+}
